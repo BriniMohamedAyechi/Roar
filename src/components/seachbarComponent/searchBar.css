@@ -1,0 +1,47 @@
+.icon{
+    color: aliceblue;
+    margin-left: 30%;
+    margin-top: 1%;
+    transition: 1ms;
+    position: absolute;
+    left: 27%;
+
+}
+.seachBarContainer input[type="text"]{
+    width: 120%;
+    height: 150%;
+    background-color: rgb(45, 218, 203);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-top: 0;
+}
+.seachBarContainer input[type="text"]:focus{
+    width: 120%;
+    height: 148%;
+    border: none;
+    color: white;
+    font-size: medium;
+
+}
+.seachBarContainer input[type="text"]::placeholder{
+    color: hsl(0, 0%, 100%);
+    font-size: medium;
+}
+.seachBarContainer,.input-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: 1ms
+
+    
+
+}
+.seachBarContainer input:focus-visible {
+    outline:none;
+    box-shadow: 2%;
+}
+.seachBarContainer{
+    margin-bottom: 1.5%;
+}

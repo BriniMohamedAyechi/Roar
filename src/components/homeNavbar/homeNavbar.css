@@ -1,0 +1,97 @@
+.navbar-home {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:1rem;
+    background-color: var(--primary);
+    z-index: 100; /* Set a high z-index to ensure the navbar appears above other elements */
+    transition: all 0.3s ease-in-out; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.navbar-home img {
+    margin-top: 0.5%;
+    width: 10%;
+    height: 8%;
+}
+
+.nav-menu {
+    display: flex;
+    max-width: fit-content;
+}
+
+
+.nav-item {
+    padding: 1rem;
+    max-width: fit-content;
+    color: aliceblue;
+}
+.nav-item:hover {
+    padding: 1rem;
+    max-width: fit-content; 
+    background-color:var(--primary);
+    
+}
+
+.hamburger {
+    display: none;
+}
+.navbar.scrolled {
+    background-color: var(--primary); /* Change this to your desired background color when scrolled */
+    color: #fff; /* Change this to your desired text color when scrolled */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow when scrolled */
+  }
+
+@media screen and (max-width: 940px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--darkgrey);
+        width:100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.4s;
+    }
+
+    .nav-menu.active {
+        left: 0%;
+        background-color: aliceblue;
+    }
+
+    .nav-item {
+        margin: 1.5rem;
+        font-size: 1.8rem;
+        justify-content: center;
+        color: aliceblue;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.search-bar-form{
+    position: fixed;
+    left: 35%;
+    width: 50%;
+}
+.profilePic{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.profilePic .Profile-Image{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}

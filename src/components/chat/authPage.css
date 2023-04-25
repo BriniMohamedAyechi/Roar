@@ -1,0 +1,12 @@
+.login-page { 
+    width: 100vw;
+     height: 100vh; 
+     padding-top: 6vw; 
+     align-items: center;
+}
+  .card { width: 200px; position: fixed; left: calc(50vw - 100px); text-align: center; }
+  .title { padding-top: 32px; font-size: 22px; color: var(--primary); font-weight: 700; }
+  .login-page .input { width: calc(100% - 16px);
+     margin-top: 12px; padding: 8px; background-color:
+      #e6f7ff; outline: none; border: 4px solid var(--darkgrey); }
+  button { margin-top: 12px; width: 100%; padding: 8px; }

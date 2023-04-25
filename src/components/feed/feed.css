@@ -1,0 +1,21 @@
+.feed {
+    flex: 5.5;
+    position:absolute;
+    left: 20%;
+    width: 50%;
+    top: 10%;
+    overflow: scroll;
+}
+
+.feedWrapper {
+    padding: 20px;
+    position: fixed;
+    margin-top: 5%;
+    width: 50%;
+    top: 0;
+    left: 25%;
+    bottom: 0;
+    overflow-y: scroll;
+
+
+}
